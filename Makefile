@@ -1,5 +1,5 @@
 %.o : %.s
-	nasm -f macho64 $< -o $@
+	nasm -f elf64 $< -o $@
 
 %.out : %.o
 	ld -static $< -o $@

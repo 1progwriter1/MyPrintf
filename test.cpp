@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main() {
-    printf("%o", -16);
+    printf("%o", -10);
 }

@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-extern void my_printf(const char *fmt_string, ...);
+extern void my_printf();
 
 int main() {
+    printf("\n>>> main(): start\n\n");
 
-    printf("std printf\n\n");
+    char string[] = "[test %s]";
 
-    my_printf("Hello world!", 10, 20, 30, 50, 50, 34, 39);
+    my_printf("hello world: \n\tpercent: %%\n\tbinary: %b\n\tdecimal: %d\n\toctal: %o\n\thexidecimal: %x\n\tstring: %s\n\tcharacter: %c\n",
+                            12, -23, -10, 56, string, 'c');
 
+    printf("\n<<< main(): end\n\n");
     return 0;
 }
