@@ -3,6 +3,7 @@
 extern void my_printf();
 
 int main() {
+
     printf("\n>>> main(): start\n\n");
 
     char string[] = "[test %s]";
